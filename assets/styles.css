@@ -1,0 +1,171 @@
+:root {
+  --negro: #18171F;
+  --gris: #817D92;
+  --grisOscuro: #24232C;
+  --verde: #A4FFAF;
+  --blanco: #E6E5EA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background: var(--negro);
+  color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+h1{
+  color: var(--gris);
+  font-size: 24px;
+  line-height: 31px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: var(--grisOscuro);
+  width: 380px;
+  padding: 20px 30px;
+}
+
+.password {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--grisOscuro);
+  width: 380px;
+  margin-bottom: 20px;
+}
+
+.password span{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.icon__Copy:hover path {
+  fill: var(--blanco);
+}
+
+.length{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.length .row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.length input {
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background-color: var(--negro);
+  border-radius: 5px;
+}
+
+.length input::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blanco); 
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.checkboxes{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  margin-bottom: 20px;
+}
+
+.checkboxes input{
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--blanco); 
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkboxes input:checked{
+  background-color: var(--verde);
+  border: 2px solid var(--verde);
+  background-image: url('./images/icon-check.svg'); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.strength{
+  padding: 20px 30px;
+  background-color: var(--negro);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 10px;
+  height: 20px; 
+  background-color: var(--verde); 
+  margin-right: 4px;
+  border: 1px solid var(--blanco);
+  display: inline-block; 
+}
+
+.word{
+  position: relative;
+  bottom: 3px;
+}
+
+.generate{
+  width: 100%;
+  padding: 20px 30px;
+  background-color: var(--verde);
+  color: var(--grisOscuro);
+  font-weight: 600;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap:12px;
+}
+
+.generate:hover{
+  background-color: var(--grisOscuro);
+  border:2px solid var(--verde);
+  color: var(--verde);
+}
+
+.generate img{
+  width: 10px;
+  height: 10px;
+}
+
+.generate:hover svg path {
+  fill: var(--verde);
+}
